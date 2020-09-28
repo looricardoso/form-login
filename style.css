@@ -5,11 +5,20 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* estilo */
+  background-image: url(image/background-page.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 form {
   display: flex;
   flex-flow: column;
+  /* estilo */
+  background-color: #ddd;
+  border-radius: 50px 50px 10px 50px;
+  padding: 50px;
+  align-items: center;
 }
 
 input,
@@ -21,4 +30,46 @@ a {
 form .linha {
   display: flex;
   flex-flow: row; /* column = form vertical, row = form horizontal */
+}
+  /* estilo */
+#titulo {
+  color: blue;
+  text-shadow: 0 0 10px deepskyblue;
+  font-size: 2em;
+}
+
+.linha {
+  padding: 5px;
+  align-items: center;
+}
+
+input {
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+label {
+  padding: 0 5px 0 0;
+  text-decoration: underline;
+}
+
+i {
+  padding: 0 0 0 10px;
+}
+
+button:hover {
+  border-style: double;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  transform: translateX(2px) translateY(2px);
 }
